@@ -472,12 +472,19 @@ footer p {
     }
 
     .productos-grid {
-        grid-template-columns: 1fr;
-        max-width: 420px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .producto {
+        min-width: 0;
     }
 
     .producto img {
         height: 250px;
+        height: 160px;
+        object-fit: cover;
     }
 
     .producto-info p {
